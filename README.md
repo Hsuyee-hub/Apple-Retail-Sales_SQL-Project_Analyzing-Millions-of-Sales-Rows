@@ -53,12 +53,13 @@ The SQL scripts address 20+ specific business questions, categorized by complexi
 **Product Insights**: Finding average prices per category and identifying unique product counts.
 **Claim Efficiency**: Calculating the percentage of "Warranty Void" claims.
 **Timeliness**: Identifying claims filed within the first 180 days of purchase to evaluate product reliability.
-**Repair Success**: Determining which stores have the highest "Paid Repaired" claim rates.
+**Claim Success Rate**: Identifying the store with the highest percentage of 'Completed' and 'Rejected' claims relative to total claims filed to monitor service quality."
 **Best-Selling Days**: Using window functions to identify the specific day of the week each store hits peak sales.
 **Growth Ratios**: Analyzing year-over-year growth for individual store locations.
 **Product Lifecycle**: Segmenting sales trends into periods (0-6 months, 6-12 months, etc.) to understand the sales decay curve of new launches
+**Least Selling Products**: Identifying the lowest-performing product in each country per year using ranking functions."
+**Geographic Sales Trends**: Filtering high-volume sales months (over 5,000 units) specifically for the United States market."
 **Correlation**: Analyzing the relationship between product price points and the frequency of warranty claims
-
 
 ## Project Focus
 
