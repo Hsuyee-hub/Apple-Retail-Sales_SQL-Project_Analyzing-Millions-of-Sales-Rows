@@ -42,24 +42,27 @@ The project uses five main tables:
    - `claim_id`: Unique identifier for each warranty claim.
    - `claim_date`: Date the claim was made.
    - `sale_id`: References the sales table.
-   - `repair_status`: Status of the warranty claim (e.g., Paid Repaired, Warranty Void).
+   - `repair_status`: Status of the warranty claim (e.g., Completed, Rejected).
 
 ## Business Problems Solved
 
 The SQL scripts address 20+ specific business questions, categorized by complexity:
 
-**Store Distribution**: Counting the number of stores per country.
-**Volume Tracking**: Calculating total units sold per store and identifying sales spikes.
-**Product Insights**: Finding average prices per category and identifying unique product counts.
-**Claim Efficiency**: Calculating the percentage of "Warranty Void" claims.
-**Timeliness**: Identifying claims filed within the first 180 days of purchase to evaluate product reliability.
-**Claim Success Rate**: Identifying the store with the highest percentage of 'Completed' and 'Rejected' claims relative to total claims filed to monitor service quality."
-**Best-Selling Days**: Using window functions to identify the specific day of the week each store hits peak sales.
-**Growth Ratios**: Analyzing year-over-year growth for individual store locations.
-**Product Lifecycle**: Segmenting sales trends into periods (0-6 months, 6-12 months, etc.) to understand the sales decay curve of new launches
-**Least Selling Products**: Identifying the lowest-performing product in each country per year using ranking functions."
-**Geographic Sales Trends**: Filtering high-volume sales months (over 5,000 units) specifically for the United States market."
-**Correlation**: Analyzing the relationship between product price points and the frequency of warranty claims
+- **Store Distribution**: Counting the number of stores per country.
+- **Volume Tracking**: Calculating total units sold per store and identifying sales spikes.
+- **Product Insights**: Finding average prices per category and identifying unique product counts.
+- **Claim Efficiency**: Calculating the percentage of "Warranty Void" claims.
+- **Timeliness**: Identifying claims filed within the first 180 days of purchase to evaluate product reliability.
+- **Claim Success Rate**: Identifying the store with the highest percentage of 'Completed' and 'Rejected' claims relative to total claims filed to monitor service quality.
+- **Zero-Claim Stores**: Identifying stores that have never had a warranty claim filed
+- **Best-Selling Days**: Using window functions to identify the specific day of the week each store hits peak sales.
+- **Growth Ratios**: Analyzing year-over-year growth for individual store locations.
+- **Product Lifecycle**: Segmenting sales trends into periods (0-6 months, 6-12 months, etc.) to understand the sales decay curve of new launches
+- **Least Selling Products**: Identifying the lowest-performing product in each country per year using ranking functions.
+- **Geographic Sales Trends**: Filtering high-volume sales months (over 5,000 units) specifically for the United States market.
+- **Correlation**: Analyzing the relationship between product price points and the frequency of warranty claims
+- **Monthly Running Totals**: Calculating monthly running totals of sales for each store over a four-year period to compare long-term revenue trends
+- **Product Launch Reliability**: Analyzing claim percentages for products launched specifically within the last two years
 
 ## Project Focus
 
